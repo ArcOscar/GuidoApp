@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SkipLines</string>
+    <string name="prefs_file">com.newapp.mysplashscreen.PREFERENCE_FILE_KEY</string>
+</resources>

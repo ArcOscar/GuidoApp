@@ -1,4 +1,15 @@
 <resources>
-    <string name="app_name">SkipLines</string>
-    <string name="prefs_file">com.newapp.mysplashscreen.PREFERENCE_FILE_KEY</string>
+    <string name="app_name">GuidoApp</string>
+    <string name="prefs_file">com.newapp.GuidoApp.PREFERENCE_FILE_KEY</string>
+    <string name="registrar_cuenta">Registrar Cuenta</string>
+    <string name="email">Email</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="confirmar_contrasena">Confirmar Contraseña</string>
+    <string name="registrar">Registrar</string>
+    <string name="proveedor">Proveedor</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="bienvenido">¡Bienvenido!</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="googleLogin">Iniciar sesión con Google</string>
+    <string name="delete">Eliminar Cuenta</string>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.newapp.mysplashscreen">
+    package="com.newapp.GuidoApp">
 
     <application
         android:allowBackup="true"
@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name="com.newapp.GuidoApp.HomeActivity" />
+        <activity android:name="com.newapp.GuidoApp.RegisterActivity" />
         <activity
-            android:name=".AuthActivity"
+            android:name="com.newapp.GuidoApp.AuthActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

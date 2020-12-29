@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "664203213402",
-    "firebase_url": "https://skiplines-satowo.firebaseio.com",
-    "project_id": "skiplines-satowo",
-    "storage_bucket": "skiplines-satowo.appspot.com"
+    "project_number": "374209732797",
+    "project_id": "guidoapp-bdb08",
+    "storage_bucket": "guidoapp-bdb08.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:664203213402:android:7375120f1d95c59327b663",
+        "mobilesdk_app_id": "1:374209732797:android:ad43cc42922e8bcd65d7d4",
         "android_client_info": {
-          "package_name": "com.newapp.mysplashscreen"
+          "package_name": "com.newapp.GuidoApp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "664203213402-vf5r9efggvg9labunrjm3uq802f13mrv.apps.googleusercontent.com",
+          "client_id": "374209732797-mbcqmkskh8o9tsqqmsqo50cpns9qoah2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAXdaDYFsXvj4XLQEUvHmvjxRsC4mZUz7Q"
+          "current_key": "AIzaSyAZ3b7suuKjCArt2rAQoUrk8TKdqbtuJxk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "664203213402-vf5r9efggvg9labunrjm3uq802f13mrv.apps.googleusercontent.com",
+              "client_id": "374209732797-mbcqmkskh8o9tsqqmsqo50cpns9qoah2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

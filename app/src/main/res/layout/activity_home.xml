@@ -58,6 +58,19 @@
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
                 android:text="@string/delete" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/qrButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="@string/scanner" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

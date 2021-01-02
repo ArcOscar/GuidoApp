@@ -11,9 +11,13 @@ import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.google.zxing.integration.android.IntentIntegrator
+import com.journeyapps.barcodescanner.CaptureActivity
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
+    var valorEscaneado = "" // Variable donde se guarda la informacion del codigo QR
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -49,6 +53,10 @@ class HomeActivity : AppCompatActivity() {
         deleteButton.setOnClickListener {
             showAlert()
         }
+
+        qrButton.setOnClickListener {
+            scanQrCode()
+        }
     }
 
     private fun showAlert() {
@@ -77,5 +85,28 @@ class HomeActivity : AppCompatActivity() {
         builder.setNegativeButton("Cancelar", null)
         val dialog: AlertDialog = builder.create()
         dialog.show()
+    }
+
+    private fun scanQrCode(){
+        val integrator = IntentIntegrator(this).apply {
+            captureActivity = CaptureActivity::class.java
+            setOrientationLocked(false)
+            setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES)
+            setPrompt("Escanenado Codigo")
+        }
+        integrator.initiateScan()
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        val result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
+        if(result != null){
+            if(result.contents == null) Toast.makeText(this, "Cancelado", Toast.LENGTH_LONG).show()
+            else{
+                Toast.makeText(this, "Scaneado: " + result.contents, Toast.LENGTH_LONG).show()
+                valorEscaneado = result.contents
+            }
+        } else {
+            super.onActivityResult(requestCode, resultCode, data)
+        }
     }
 }

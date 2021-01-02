@@ -12,4 +12,5 @@
     <string name="login">Iniciar Sesión</string>
     <string name="googleLogin">Iniciar sesión con Google</string>
     <string name="delete">Eliminar Cuenta</string>
+    <string name="scanner">Scanner QR</string>
 </resources>

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/My_Splash_Screen.iml" filepath="$PROJECT_DIR$/.idea/modules/My_Splash_Screen.iml" group="My_Splash_Screen" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="My Splash Screen/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/My_Splash_Screen.iml" filepath="$PROJECT_DIR$/.idea/modules/My_Splash_Screen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/My_Splash_Screen.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/My_Splash_Screen.app.iml" />
     </modules>
   </component>
 </project>

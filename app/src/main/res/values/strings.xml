@@ -13,4 +13,8 @@
     <string name="googleLogin">Iniciar sesión con Google</string>
     <string name="delete">Eliminar Cuenta</string>
     <string name="scanner">Scanner QR</string>
+
+    <string name="option_1">Sin contagio</string>
+    <string name="option_2">Interacción con Positivo</string>
+    <string name="option_3">Positivo</string>
 </resources>

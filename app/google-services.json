@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "374209732797",
+    "firebase_url": "https://guidoapp-bdb08-default-rtdb.firebaseio.com/",
     "project_id": "guidoapp-bdb08",
     "storage_bucket": "guidoapp-bdb08.appspot.com"
   },
@@ -13,6 +14,51 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "374209732797-l3ck17loiqhgomome8l6p67r7heit3qr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.newapp.GuidoApp",
+            "certificate_hash": "00bf7caf2bfb9b8556f30e269ff1b02a9517c054"
+          }
+        },
+        {
+          "client_id": "374209732797-mbcqmkskh8o9tsqqmsqo50cpns9qoah2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ3b7suuKjCArt2rAQoUrk8TKdqbtuJxk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374209732797-mbcqmkskh8o9tsqqmsqo50cpns9qoah2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374209732797:android:2ce63d53070378ee65d7d4",
+        "android_client_info": {
+          "package_name": "mx.example.borrar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374209732797-qh2n08pqvkbvbr5l12bnfvjfkj657pcj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mx.example.borrar",
+            "certificate_hash": "00bf7caf2bfb9b8556f30e269ff1b02a9517c054"
+          }
+        },
         {
           "client_id": "374209732797-mbcqmkskh8o9tsqqmsqo50cpns9qoah2.apps.googleusercontent.com",
           "client_type": 3

@@ -27,11 +27,41 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/splash"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"/>
+
             <TextView
                 android:id="@+id/usedEmailText"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:text="@string/email" />
+                android:gravity="center_horizontal"
+                android:text="@string/email"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/estadoText"
+                    android:layout_width="143dp"
+                    android:layout_height="36dp"
+                    android:gravity="center_horizontal"
+                    android:text="Estado"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/estadoBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_baseline_autorenew_24" />
+            </LinearLayout>
 
             <Space
                 android:layout_width="match_parent"

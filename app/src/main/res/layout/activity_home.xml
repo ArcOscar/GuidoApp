@@ -69,12 +69,12 @@
                 android:layout_weight="1" />
 
             <Button
-            android:id="@+id/signOutButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:text="@string/logout" />
+                android:id="@+id/signOutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="@string/logout" />
 
             <Space
                 android:layout_width="match_parent"
@@ -101,6 +101,19 @@
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
                 android:text="@string/scanner" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/InfoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="@string/info" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

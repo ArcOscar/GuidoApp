@@ -14,6 +14,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.MenuRes
 import androidx.appcompat.app.AlertDialog
+import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.startActivity
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -67,6 +69,15 @@ class HomeActivity : AppCompatActivity() {
                 // Log.w(FragmentActivity.TAG, "Failed to read value.", error.toException())
             }
         })
+
+        //Boton info
+
+        val button2 = findViewById<Button>(R.id.InfoButton)
+        button2.setOnClickListener {
+            val infoIntent = Intent(this, InfoActivity::class.java)
+
+            startActivity(infoIntent)
+        }
     }
 
     fun ActualizarEstado(tipo: Int){
@@ -87,6 +98,11 @@ class HomeActivity : AppCompatActivity() {
             estado.setTextColor(Color.parseColor("#F41B1B"))
         }
     }
+
+
+
+
+
 
     private fun showMenu(v: View, @MenuRes menuRes: Int) {
         val popup = PopupMenu(this!!, v)
@@ -149,7 +165,7 @@ class HomeActivity : AppCompatActivity() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Eliminar cuenta")
         builder.setMessage("Al eliminar la cuenta se perderá toda la información relevante al usuario" +
-                            " y se regresará a la pantalla de inicio de sesión.")
+                " y se regresará a la pantalla de inicio de sesión.")
         builder.setPositiveButton("Eliminar", object: DialogInterface.OnClickListener {
             override fun onClick(dialog:DialogInterface, id:Int) {
                 val user = Firebase.auth.currentUser!!
@@ -195,4 +211,11 @@ class HomeActivity : AppCompatActivity() {
             super.onActivityResult(requestCode, resultCode, data)
         }
     }
+
+
+
+}
+
+class InfoActivity {
+
 }
